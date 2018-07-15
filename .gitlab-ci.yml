@@ -1,0 +1,31 @@
+variables:
+    DEBFULLNAME: "GitLab CI"
+    DEBEMAIL: "gitlabci@localhost"
+    VERSION_TO_BUILD: "4.0.1"
+
+stages:
+    - lint
+    - build
+
+image: debian:stretch
+
+lint:scripts:
+    stage: lint
+    tags:
+        - docker
+    before_script:
+        - apt-get update && apt-get install -y shellcheck
+    script:
+        - shellcheck build.sh
+
+build:sogo:
+    stage: build
+    tags:
+        - docker
+    script:
+        - ./build.sh
+    artifacts:
+        expire_in: 1 hours
+        when: always
+        paths:
+            - vendor/*.deb
