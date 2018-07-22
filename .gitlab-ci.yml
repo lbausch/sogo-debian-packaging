@@ -7,12 +7,11 @@ stages:
     - lint
     - build
 
-image: debian:stretch
-
 lint:scripts:
     stage: lint
     tags:
         - docker
+    image: debian:stretch
     before_script:
         - apt-get update && apt-get install -y shellcheck
     script:
@@ -22,6 +21,7 @@ build:sogo:
     stage: build
     tags:
         - docker
+    image: debian:jessie
     script:
         - ./build.sh
     artifacts:

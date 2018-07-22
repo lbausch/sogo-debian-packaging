@@ -29,7 +29,7 @@ SOGO_GIT_TAG="SOGo-${VERSION_TO_BUILD}"
 SOPE_GIT_TAG="SOPE-${VERSION_TO_BUILD}"
 
 PACKAGES_DIR="${BASE_DIR}/vendor"
-PACKAGES_TO_INSTALL="git zip wget make debhelper gnustep-make libssl-dev libgnustep-base-dev libldap2-dev zlib1g-dev libpq-dev libmariadbclient-dev-compat libmemcached-dev liblasso3-dev libcurl4-gnutls-dev devscripts libexpat1-dev libpopt-dev libsbjson-dev libsbjson2.3 libcurl3"
+PACKAGES_TO_INSTALL="git zip wget make debhelper gnustep-make libssl-dev libgnustep-base-dev libldap2-dev zlib1g-dev libpq-dev libmysqlclient-dev libmemcached-dev liblasso3-dev libcurl4-gnutls-dev devscripts libexpat1-dev libpopt-dev libsbjson-dev libsbjson2.3 libcurl3"
 
 export DEBIAN_FRONTEND=noninteractive
 
