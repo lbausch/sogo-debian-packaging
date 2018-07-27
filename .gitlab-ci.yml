@@ -25,7 +25,7 @@ build:sogo:
     script:
         - ./build.sh
     artifacts:
-        expire_in: 1 hours
+        expire_in: 1 week
         when: always
         paths:
             - vendor/*.deb
