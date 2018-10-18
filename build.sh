@@ -64,7 +64,7 @@ dpkg-checkbuilddeps && dpkg-buildpackage
 
 cd "$PACKAGES_DIR"
 
-# Install the build packages
+# Install the built packages
 dpkg -i libsope*.deb
 
 # Checkout the SOGo repository with the given tag
@@ -83,7 +83,7 @@ dpkg-checkbuilddeps && dpkg-buildpackage -b
 
 cd "$PACKAGES_DIR"
 
-# Install the build packages
+# Install the built packages
 dpkg -i sope4.9-gdl1-mysql_4.9.r1664_amd64.deb
 dpkg -i sope4.9-libxmlsaxdriver_4.9.r1664_amd64.deb
 dpkg -i "sogo_${VERSION_TO_BUILD}_amd64.deb"
