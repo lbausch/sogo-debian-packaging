@@ -75,7 +75,7 @@ cp -a packaging/debian debian
 
 dch --newversion "$VERSION_TO_BUILD" "Automated build for version $VERSION_TO_BUILD"
 
-cp packaging/debian-multiarch/control-no-openchange debian
+# cp packaging/debian-multiarch/control-no-openchange debian
 
 ./debian/rules
 
