@@ -7,7 +7,7 @@ stages:
     - lint
     - build
 
-image: debian:stretch
+image: debian:buster
 
 lint:scripts:
     stage: lint
