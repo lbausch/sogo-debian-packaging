@@ -52,6 +52,9 @@ dpkg -i libwbxml2-0_0.11.6-1_amd64.deb libwbxml2-dev_0.11.6-1_amd64.deb
 # Install any missing packages
 apt-get -f install -y
 
+# Install Python
+apt-get install -y python
+
 # Checkout the SOPE repository with the given tag
 git clone --depth 1 --branch "${SOPE_GIT_TAG}" $REPOSITORY_SOPE
 cd sope
