@@ -44,8 +44,8 @@ echo 'APT::Get::Install-Suggests "false";' >> /etc/apt/apt.conf
 apt-get update && apt-get install -y $PACKAGES_TO_INSTALL
 
 # Download and install libwbxml2 and libwbxml2-dev
-wget -qc https://packages.inverse.ca/SOGo/nightly/4/debian/pool/stretch/w/wbxml2/libwbxml2-dev_0.11.6-1_amd64.deb
-wget -qc https://packages.inverse.ca/SOGo/nightly/4/debian/pool/stretch/w/wbxml2/libwbxml2-0_0.11.6-1_amd64.deb
+wget -c https://packages.inverse.ca/SOGo/nightly/5/debian/pool/stretch/w/wbxml2/libwbxml2-dev_0.11.6-1_amd64.deb
+wget -c https://packages.inverse.ca/SOGo/nightly/5/debian/pool/stretch/w/wbxml2/libwbxml2-0_0.11.6-1_amd64.deb
 
 dpkg -i libwbxml2-0_0.11.6-1_amd64.deb libwbxml2-dev_0.11.6-1_amd64.deb
 
