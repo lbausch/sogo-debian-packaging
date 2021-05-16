@@ -1,4 +1,4 @@
-# SOGo 4 Debian packaging
+# SOGo Debian packaging
 
 ## Requirements
 + Docker: https://docs.docker.com/install/
