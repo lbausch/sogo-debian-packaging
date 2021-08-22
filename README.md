@@ -5,7 +5,7 @@
 
 ## Building SOGo deb packages
 + `cp .env.example .env` and adjust `.env` to your needs
-+ Run `docker run --rm -it -v $(pwd):/data debian:stretch /data/build.sh`
++ Run `docker run --rm -it -v $(pwd):/data debian:buster /data/build.sh`
 + Find the packages inside the `vendor` directory
 
 ## GitLab CI support
