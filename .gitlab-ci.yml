@@ -1,13 +1,13 @@
 variables:
     DEBFULLNAME: "GitLab CI"
     DEBEMAIL: "gitlabci@localhost"
-    VERSION_TO_BUILD: "5.2.0"
+    VERSION_TO_BUILD: "5.3.0"
 
 stages:
     - lint
     - build
 
-image: debian:buster
+image: debian:bullseye
 
 lint:scripts:
     stage: lint
