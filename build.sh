@@ -61,6 +61,8 @@ cd sope
 
 cp -a packaging/debian debian
 
+dch --newversion "4.9.r1664.$VERSION_TO_BUILD" "Automated build for version 4.9.r1664.$VERSION_TO_BUILD"
+
 ./debian/rules
 
 dpkg-checkbuilddeps && dpkg-buildpackage
@@ -87,6 +89,6 @@ dpkg-checkbuilddeps && dpkg-buildpackage -b
 cd "$PACKAGES_DIR"
 
 # Install the built packages
-dpkg -i sope4.9-gdl1-mysql_4.9.r1664_amd64.deb
-dpkg -i sope4.9-libxmlsaxdriver_4.9.r1664_amd64.deb
+dpkg -i sope4.9-gdl1-mysql_4.9.r1664.${VERSION_TO_BUILD}_amd64.deb
+dpkg -i sope4.9-libxmlsaxdriver_4.9.r1664.${VERSION_TO_BUILD}_amd64.deb
 dpkg -i "sogo_${VERSION_TO_BUILD}_amd64.deb"
