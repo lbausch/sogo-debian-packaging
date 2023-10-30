@@ -1,7 +1,7 @@
 variables:
     DEBFULLNAME: "GitLab CI"
     DEBEMAIL: "gitlabci@localhost"
-    VERSION_TO_BUILD: "5.8.3"
+    VERSION_TO_BUILD: "5.9.0"
 
 stages:
     - lint
