@@ -7,7 +7,7 @@ stages:
     - lint
     - build
 
-image: debian:bullseye
+image: debian:bookworm
 
 lint:scripts:
     stage: lint
