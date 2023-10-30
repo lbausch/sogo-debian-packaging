@@ -1,7 +1,7 @@
 # SOGo Debian packaging
 
 ## Requirements
-+ Docker: https://docs.docker.com/install/
++ Docker: https://docs.docker.com/get-docker/
 
 ## Building SOGo deb packages
 + `cp .env.example .env` and adjust `.env` to your needs
